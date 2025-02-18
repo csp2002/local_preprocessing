@@ -4,7 +4,7 @@
 This repository provides code for extracting medical images from DICOM (`.dcm`) files to deal with segmentation tasks.
 
 ## **Dataset Preparation**
-Download the dataset and put it into the folder local_data
+Download the dataset and put it into the folder `local_data/`
 
 
 ## **Installation**
