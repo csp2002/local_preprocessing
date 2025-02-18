@@ -3,12 +3,17 @@
 
 This repository provides code for extracting medical images from DICOM (`.dcm`) files to deal with segmentation tasks.
 
-## **Dataset Preparation**
-Download the dataset and put it into the folder `local_data/`
+
 
 
 ## **Installation**
-First, create a virtual environment using Conda:
+First, clone this repo using:
+
+```
+git clone https://github.com/csp2002/local_preprocessing.git
+```
+
+Then, create a virtual environment using Conda:
 
 ```
 conda create -n local python=3.9 -y
@@ -17,8 +22,12 @@ conda activate local
 
 Then, install the required dependencies:
 ```
+cd local_preprocessing
 pip install -r requirements.txt
 ```
+
+## **Dataset Preparation**
+Download the dataset and put it into the folder `local_preprocessing/local_data/`
 
 ## **Usage**
 To extract images, run:
