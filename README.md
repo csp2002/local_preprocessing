@@ -14,6 +14,7 @@ First, create a virtual environment using Conda:
 ```python
 conda create -n local python=3.9 -y
 conda activate local
+'''
 
 Then, install the required dependencies:
 pip install -r requirements.txt
