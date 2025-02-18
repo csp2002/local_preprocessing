@@ -11,15 +11,14 @@ local_data/ │── anon_SMet1/ │ ├── SMET1/ │ ├── SMET2/ │ 
 ## **Installation**
 First, create a virtual environment using Conda:
 
-conda create -n medimg_env python=3.9 -y
-conda activate medimg_env
+```python
+conda create -n local python=3.9 -y
+conda activate local
 
 Then, install the required dependencies:
 pip install -r requirements.txt
 
 Usage
 To extract images, run:
-
-
-python extraction.py
+'python extraction.py'
 The detailed instructions are provided in the code comments.
