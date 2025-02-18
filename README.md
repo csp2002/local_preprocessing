@@ -3,9 +3,8 @@
 
 This repository provides code for extracting medical images from DICOM (`.dcm`) files to deal with segmentation tasks.
 
-## **Dataset Structure**
-The local dataset follows the structure below:
-local_data/ │── anon_SMet1/ │ ├── SMET1/ │ ├── SMET2/ │ ├── ... │── anon_SMet2/ │ ├── SMET141/ │ ├── SMET142/ │ ├── ...
+## **Dataset Preparation**
+Download the dataset and put it into the folder local_data
 
 
 ## **Installation**
@@ -21,9 +20,11 @@ Then, install the required dependencies:
 pip install -r requirements.txt
 ```
 
-Usage
+## **Usage**
 To extract images, run:
 ```
 python extraction.py
 ```
 The detailed instructions are provided in the code comments.
+
+By running extraction.py, you will get the 3D numpy of both the original images and the corresponding GT masks. After that, you can further preprocess the data based on different codebase (like saving the 2D image slice by slice using plt.imsave and segmenting the ROIs using 2D segmentation networks like SAM).

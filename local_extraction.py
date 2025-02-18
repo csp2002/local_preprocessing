@@ -37,3 +37,4 @@ print(np.max(image))
 print(np.min(image))
 print(np.max(mask))
 print(np.min(mask))
+
